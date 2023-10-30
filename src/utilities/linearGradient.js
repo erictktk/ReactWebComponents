@@ -1,8 +1,8 @@
 import * as HSVUtils from "eric-hsvutils";
-import * as pau from "eric-pixelarrayutils";
+import * as PixArrUtils from "eric-pixelarrayutils";
 
 export class LinearGradient {
-  constructor(colors, stopPositions = null) {
+  constructor(colors, stopPositions = null, angleInDeg=0) {
     /**Array<Number> */
     this.colors = colors;
     if (!stopPositions) {
@@ -12,6 +12,7 @@ export class LinearGradient {
       }
     }
     this.stops = stopPositions;
+    this.angleInDeg = angleInDeg;
   }
 
   getAvgDifference(){
@@ -23,7 +24,7 @@ export class LinearGradient {
   }
   
   getAvgDarkness(){
-    pau.HSVUtils
+    PixArrUtils.HSVUtils
   }
 
   isDark(){
