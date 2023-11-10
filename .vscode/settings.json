@@ -1,0 +1,19 @@
+[
+    {
+    // ... other settings
+    "taskButtons": {
+      "build": true,
+      "test": true,
+      "refresh": true,
+      "tasks": [
+        {
+          "label": "Concatenate Files",
+          "task": "Watch Script",
+          "type": "shell",
+          "color": "green",
+          "icon": "play"
+        }
+      ]
+    }
+  }
+]

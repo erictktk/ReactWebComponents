@@ -1,0 +1,40 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Concatenate Files",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}/src/concatenation.js"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Concatenate Script Parameter",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "${workspaceFolder}\\src\\concatenation_param.js", 
+                "${workspaceFolder}\\src\\api",
+            ],
+            "problemMatcher": [],
+            "group": {
+              "kind": "build",
+              "isDefault": true
+            },
+            "presentation": {
+              "reveal": "always",
+              "panel": "new"
+            }
+        }
+    ]
+}
